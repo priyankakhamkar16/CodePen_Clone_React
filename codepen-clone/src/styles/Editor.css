@@ -1,0 +1,99 @@
+/* General Editor Container */
+.editor-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #1e1e1e;
+  padding: 20px;
+}
+
+/* Flexbox to position the editor panels in one line */
+.editor-panels {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Editor Panel Wrapper: Each panel (HTML, CSS, JS) is wrapped in this */
+.editor-panel-wrapper {
+  width: 32%;
+}
+
+/* Textarea Styling for Editor Panels */
+.editor-panel {
+  width: 100%;
+  height: 200px;
+  font-size: 14px;
+  background-color: #2d2d2d;
+  color: white;
+  border: 1px solid #444;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  resize: none;
+}
+
+/* Label for Each Editor (HTML, CSS, JS) */
+.editor-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 8px;
+  color: white;
+}
+
+/* Left section for HTML, CSS, JS labels with symbols */
+.editor-left-label {
+  display: flex;
+  align-items: center;
+}
+
+/* Small square icon with background color */
+.editor-icon {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 12px;
+  margin-right: 6px;
+  border-radius: 2px;
+  color: white;
+}
+
+/* HTML Icon */
+.html-icon {
+  background-color: #e34c26; /* Red background for HTML icon */
+}
+
+/* CSS Icon */
+.css-icon {
+  background-color: #264de4; /* Blue background for CSS icon */
+}
+
+/* JavaScript Icon */
+.js-icon {
+  background-color: #f7df1e; /* Yellow background for JS icon */
+  color: black;
+}
+
+/* Right section for settings and dropdown icons */
+.editor-right-icons {
+  display: flex;
+  align-items: center;
+}
+
+/* Settings and Dropdown Icon */
+.editor-settings-icon, .editor-dropdown-icon {
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+/* Preview Frame Styling */
+iframe {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+  border: none;
+  margin-top: 20px;
+}
